@@ -38,7 +38,7 @@ export default {
   created () { },
   data () {
     return {
-      username: 'johnclark9527',
+      username: 'jay9527',
       password: '123456'
     }
   },
