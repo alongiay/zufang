@@ -12,33 +12,31 @@
       <!-- 搜索框 -->
       <SearchHouse></SearchHouse>
     </div>
-    <div class="banner">
-      <van-row>
-        <van-col span="6">
-          <div>
-            <van-icon name="wap-home-o" size="40px" />
-            <p>整租</p>
-          </div>
-        </van-col>
-        <van-col span="6"
-          ><div>
-            <van-icon name="friends-o" size="40px" />
-            <p>合租</p>
-          </div></van-col
+    <div class="tubiao">
+      <div class="yi">
+        <van-icon name="wap-home-o" class="er" size="0.8rem"
+          ><p>整租</p></van-icon
         >
-        <van-col span="6"
-          ><div>
-            <van-icon name="qr" size="40px" />
-            <p>地图找房</p>
-          </div></van-col
+      </div>
+      <div class="yi">
+        <van-icon name="friends-o" class="er" size="0.8rem"
+          ><p>合租</p></van-icon
         >
-        <van-col span="6"
-          ><div>
-            <van-icon name="guide-o" size="40px" />
-            <p>去出租</p>
-          </div></van-col
+      </div>
+      <div class="yi">
+        <van-icon name="location-o" class="er" size="0.8rem"
+          ><p>地图找房</p></van-icon
         >
-      </van-row>
+      </div>
+      <div class="yi">
+        <van-icon
+          name="wap-home"
+          class="er"
+          size="0.8rem"
+          @click="$router.push('/publish')"
+          ><p>去出租</p></van-icon
+        >
+      </div>
     </div>
     <div class="group">
       <div class="top">
@@ -156,5 +154,24 @@ export default {
 .imgSrc {
   width: 80px;
   height: 80px;
+}
+.tubiao {
+  height: 2.7rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.tubiao .yi {
+  background-color: rgb(235, 235, 234);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+.tubiao .yi .er {
+  margin-top: 0.5rem;
+}
+.tubiao .yi .er p {
+  font-size: 0.35rem;
+  margin-top: 0.7rem;
 }
 </style>

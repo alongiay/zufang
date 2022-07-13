@@ -8,6 +8,7 @@ const My = () => import('@/views/My')
 const Login = () => import('@/views/Login')
 const Registe = () => import('@/views/registe')
 const Map = () => import('@/views/Home/components/Map')
+const Publish = () => import('@/views/Publish')
 
 Vue.use(VueRouter)
 
@@ -24,7 +25,8 @@ const routes = [{
 },
 { path: '/login', component: Login },
 { path: '/registe', component: Registe },
-{ path: '/map', component: Map }
+{ path: '/map', component: Map },
+{ path: '/publish', component: Publish }
 
 ]
 
